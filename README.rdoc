@@ -1,6 +1,15 @@
 = css-get
 
-Description goes here.
+== Usage 
+ css-get [options] list|install|uninstall css_name
+
+   For help use: css-get --help
+
+== Options
+   -h, --help          Displays help message
+   -v, --version       Displays version
+   -q, --quiet         Output as little as possible, overrides verbose
+   -V, --verbose       Verbose output
 
 == Note on Patches/Pull Requests
  
@@ -15,4 +24,4 @@ Description goes here.
 
 == Copyright
 
-Copyright (c) 2009 Andrew Kennedy. See LICENSE for details.
+Copyright (c) 2009 Jack Russell Software Company LLC. See LICENSE for details.

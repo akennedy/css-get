@@ -5,12 +5,18 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "css-get"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{css library install}
+    gem.description = %Q{command line interface to install css libraries}
     gem.email = "andrew@jackrussellsoftware.com"
     gem.homepage = "http://github.com/akennedy/css-get"
-    gem.authors = ["Andrew Kennedy"]
+    gem.authors = ["Tom Wilson", "Andrew Kennedy", "Barrett Little", "Russell Niller"]
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
+    gem.add_dependency('rest-client', '>= 1.0.3')
+    gem.add_dependency('crack', '>= 0.1.2')
+    gem.has_rdoc = true
+    gem.files =  FileList["[A-Z]*", "{bin,generators,lib,test}/**/*"]
+    
+    
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
@@ -49,5 +55,5 @@ Rake::RDocTask.new do |rdoc|
   rdoc.rdoc_dir = 'rdoc'
   rdoc.title = "css-get #{version}"
   rdoc.rdoc_files.include('README*')
-  rdoc.rdoc_files.include('lib/**/*.rb')
+  rdoc.rdoc_files.include('bin/css-get')
 end
