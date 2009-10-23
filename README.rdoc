@@ -2,7 +2,7 @@
 
 == Install 
 add gemcutter as source
- sudo gem install gemcutter
+ gem install gemcutter
  
  gem tumble
  
