@@ -1,5 +1,13 @@
 = css-get
 
+== Install 
+ gem install css-get
+
+add gemcutter as source
+ sudo gem install gemcutter
+ 
+ gem tumble
+
 == Usage 
  css-get [options] list|install|uninstall css_name
 
