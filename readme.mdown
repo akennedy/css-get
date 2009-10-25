@@ -1,0 +1,56 @@
+# css-get
+
+## About
+
+css-get is a simple command client application that connects to a css-get server
+that provides an index of all the css stylesheets that are available for 
+your web project.
+
+## Configuration
+
+css-get is defaulted to use the following settings:
+
+    CSSGET_HOST = http://css-get.jackhq.com
+    CSSDIR = public/stylesheets
+
+You can modify these settings in your environment file or the environment variables
+manager.
+
+## Installation
+
+You need ruby, rubygems, and gemcutter to install css-get.
+
+    gem install css-get
+
+## Usage
+
+Once installed it is automatcally available to you via the command line. 
+css-get has three simple commands:
+
+* list - Lists all stylesheets on the server.
+
+    css-get list
+
+
+* install - Installs the stylesheet specified.
+
+    css-get install 960
+
+
+* uninstall - Removes the stylesheet specified from you current project.
+
+    css-get uninstall 960
+
+## Update to latest version
+
+    gem update css-get
+
+## Support
+
+Tweet any support requests to http://twitter.com/cssget
+
+
+## Uninstall
+
+    gem uninstall css-get
+   
